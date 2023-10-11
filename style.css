@@ -1251,7 +1251,7 @@ FOOTER
   .review__text {
     width: 420px;
     max-width: 380px;
-    align-items: start;
+    align-items: center;
   }
 
   .get__started--text {
