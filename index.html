@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Treact</title>
     <link rel="stylesheet" href="./style.css" />
+    <script src="index.js"></script>
   </head>
 <body>
   
@@ -15,20 +16,77 @@
             <img src="./assets/logo.svg" alt="" class="logo__img" />
             <a href="#" class="logo__name">Treact</a>
           </div>
-          <ul>
-            <li><a href="#" class="nav__link link__hover-effect">About</a></li>
-            <li><a href="#" class="nav__link link__hover-effect">Blog</a></li>
+          <ul class="nav__links">
+            <li><a href="#" class="nav__link link__hover-effect id__link">About</a></li>
+            <li><a href="#" class="nav__link link__hover-effect id__link">Blog</a></li>
             <li>
-              <a href="#" class="nav__link link__hover-effect">Pricing</a>
+              <a href="#pricing" class="nav__link link__hover-effect">Pricing</a>
             </li>
             <li>
-              <a href="#" class="nav__link link__hover-effect">Contact Us</a>
+              <a href="#get__started" class="nav__link link__hover-effect">Contact Us</a>
             </li>
             <li>
-              <a href="#" class="nav__link login link__hover-effect">Login</a>
+              <a href="#" class="nav__link login link__hover-effect id__link">Login</a>
             </li>
-            <li><a href="#" class="btn">Sign Up</a></li>
+            <li><a href="#get__started" class="btn">Sign Up</a></li>
           </ul>
+          <button class="btn__menu" onclick="openMenu()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="light___StyledMenuIcon-sc-lj69nl-15 bPlZcF"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+          <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="light___StyledCloseIcon-sc-lj69nl-14 brSrPp"
+              >
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+            <ul class="menu__links">
+              <li class="menu__list">
+                <a href="" class="menu__link" onclick="closeMenu()">About</a>
+              </li>
+              <li class="menu__list">
+                <a href="" class="menu__link menu__purple" onclick="closeMenu()">Blog</a>
+              </li>
+              <li class="menu__list">
+                <a href="" class="menu__link menu__purple" onclick="closeMenu()">Pricing</a>
+              </li>
+              <li class="menu__list">
+                <a href="" class="menu__link menu__purple" onclick="closeMenu()">Contact Us</a>
+              </li>
+              <li class="menu__list">
+                <a href="" class="menu__link menu__purple" onclick="closeMenu()">Login</a>
+              </li>
+              <li class="menu__list">
+                <button class=" btn btn__purple--menu">Sign Up</button>
+              </li>
+            </ul>
+
         </div>
       </div>
     </section>
@@ -420,7 +478,7 @@
 
     <section id="testimonials">
       <div class="container">
-        <div class="row section__row">
+        <div class="row section__row direction">
           <figure class="test__img--wrapper">
             <img
               class="testimony__img"
@@ -526,61 +584,61 @@
         </div>
       </div>
     </section>
-    <footer>
+    <div class="footer__container">
+    <footer class="base">
       <div class="container">
         <div class="footer__wrapper">
           <div class="row">
             <div class="footer__links">
               <div class="link__list">
                 <h5 class="footer__subtitle">MAIN</h5>
-                <p class="link">Blog</p>
-                <p class="link">FAQs</p>
-                <p class="link">Support</p>
-                <p class="link">About Us</p>
+                <p class="link ">Blog</p>
+                <p class="link ">FAQs</p>
+                <p class="link ">Support</p>
+                <p class="link ">About Us</p>
               </div>
               
               <div class="link__list">
                 <h5 class="footer__subtitle">PRODUCT</h5>
-                <p class="link">Log In</p>
-                <p class="link">Personal</p>
-                <p class="link">Business</p>
-                <p class="link">Team</p>
+                <p class="link ">Log In</p>
+                <p class="link ">Personal</p>
+                <p class="link ">Business</p>
+                <p class="link ">Team</p>
               </div>
 
               <div class="link__list">
                 <h5 class="footer__subtitle">PRESS</h5>
-                <p class="link">Logos</p>
-                <p class="link">Events</p>
-                <p class="link">Stories</p>
-                <p class="link">Office</p>
+                <p class="link ">Logos</p>
+                <p class="link ">Events</p>
+                <p class="link ">Stories</p>
+                <p class="link ">Office</p>
               </div>
 
               <div class="link__list">
                 <h5 class="footer__subtitle">TEAM</h5>
-                <p class="link">Career</p>
-                <p class="link">Founders</p>
-                <p class="link">Culture</p>
-                <p class="link">Onboarding</p>
+                <p class="link ">Career</p>
+                <p class="link ">Founders</p>
+                <p class="link ">Culture</p>
+                <p class="link ">Onboarding</p>
               </div>
 
               <div class="link__list">
                 <h5 class="footer__subtitle">LEGAL</h5>
-                <p class="link">GDPR</p>
-                <p class="link">Privacy Policy</p>
-                <p class="link">Terms of Service</p>
-                <p class="link">Disclaimer</p>
+                <p class="link ">GDPR</p>
+                <p class="link ">Privacy Policy</p>
+                <p class="link ">Terms of Service</p>
+                <p class="link ">Disclaimer</p>
               </div>
             </div>
             <div class="horizontal__line"></div>
-            <div class="footer__social--links">
+            <div class="footer__info">
               <div class="logo">
-                <img class="logo__light" src="./assets/logo.svg" alt="">
+                <img class="logo__light" src="./assets/logo-light.svg" alt="">
                 <div class="logo__name--light">
-                  TREACT INC.
+                  Treact Inc.
                 </div>
               </div>
               <p class="copyright">&copy; 2018 Treact Inc. All Rights Reserved.</p>
-            </div>
             <div class="socials">
               <a href="https://www.facebook.com" class="social">
                 <svg fill="currentColor" viewBox="0 0 24 24"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z">
@@ -599,9 +657,11 @@
               </a>
             </div>
           </div>
+          </div>
         </div>
       </div>
     </footer>
+  </div>
   </body>
 
   
