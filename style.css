@@ -563,6 +563,7 @@ PRICING
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 0 24px;
 }
 
 .pricing__title {
@@ -765,7 +766,8 @@ TESTIMONIALS
   color: #4a5568;
   font-weight: 500;
   line-height: 1.625;
-  width: 576px;
+  max-width: 576px;
+  width: 100%;
 }
 
 .reviewer__profile {
@@ -975,8 +977,8 @@ FOOTER
 }
 
 .social:hover {
-  background-color: #243363;
-  opacity: 0;
+  background-color: #c3c3c3;
+  opacity: 2;
 }
 
 @media (max-width: 1024px) {
@@ -1107,7 +1109,7 @@ FOOTER
 
   .quality__work {
     text-align: center;
-    width: 75%;
+    width: 100%;
     margin-top: 64px;
     margin-right: 0;
   }
@@ -1155,7 +1157,7 @@ FOOTER
     text-align: center;
     margin-top: 56px;
     margin-right: 0;
-    width: 75%;
+    width: 100%;
   }
 
   .subtext {
@@ -1170,6 +1172,8 @@ FOOTER
   .value__top {
     justify-content: center;
   }
+
+
 
   .direction {
     display: flex;
@@ -1186,7 +1190,7 @@ FOOTER
     text-align: center;
     margin-top: 56px;
     margin-right: 0;
-    width: 75%;
+    width: 100%;
   }
 
   .link__list {
@@ -1219,9 +1223,7 @@ FOOTER
     text-align: center;
   }
 
-  .pricing__title{
-    width: 469px;
-  }
+  
 
   .reviewer__profile {
     flex-direction: column;
@@ -1240,7 +1242,7 @@ FOOTER
   }
 
   .link__list {
-    width: calc(100% / 4);
+    width: calc(100% / 3);
   }
 }
 
@@ -1249,13 +1251,14 @@ FOOTER
     align-items: center;
   }
   .review__text {
-    width: 420px;
-    max-width: 350px;
+    max-width: 340px;
     align-items: center;
   }
 
   .get__started--text {
     width: 400px;
+    padding: 60px;
+    font-size: 32px;
   }
 
   .get__started--buttons {
